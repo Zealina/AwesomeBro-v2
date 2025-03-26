@@ -23,7 +23,7 @@ class Storage:
 
         DB_NAME = os.getenv("DB_NAME", "practice")
         DB_ENV = os.getenv("DB_ENV", "test")
-        URL = f"sqlite+pysqlite:///memory:"
+        URL = f"sqlite+pysqlite:///:memory:"
 
         self.__engine = create_engine(URL)
 
